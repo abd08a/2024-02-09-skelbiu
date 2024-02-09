@@ -1,4 +1,7 @@
-
+body{
+  margin: 0 auto;
+  max-width: 1440px;
+}
 
 .logo{
   width: 300px;
@@ -14,12 +17,43 @@
 
 .card{
   padding: 1rem; 
-  border-top: 2px black solid;
-  width: 700px;
+  border-top: 2px dotted rgb(70, 185, 181);
+  border-left: 2px dotted rgb(255, 171, 77); 
+  width: 1440px;
   text-decoration: none;
   color: darkslategray;
 }
 
 .card img {
 width: 650px;
+height: 400px;
+object-fit: cover;
+}
+
+.title{
+  color:  rgb(204, 116, 16);
+  font-size: 40px;
+}
+
+.price{
+  color: rgb(16, 112, 111);
+  font-size: 28px;
+} 
+
+
+nav ul{
+  list-style: none;
+  display: flex;
+}
+
+nav a{
+  text-decoration: none;
+  color: rgb(247, 199, 111);
+  background-color: rgb(38, 168, 168);
+  padding: 10px;
+  font-weight: 700;
+}
+
+nav li{
+  margin-right: 20px;
 }

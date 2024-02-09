@@ -9,7 +9,7 @@ const fetchProducts = async ()=>{
 
     products.forEach((product)=>{
       const card = document.createElement('a') 
-      card.href = './product.html'
+      card.href = './product/product.html'
       card.addEventListener('click', ()=>{
         localStorage.setItem('productId', product.id)
       })
@@ -20,9 +20,12 @@ const fetchProducts = async ()=>{
       const img = document.createElement('img')
       const description = document.createElement('p')
       const location = document.createElement('p')
+
+      title.classList.add('title')
+      price.classList.add('price')
     
       title.innerText = product.title 
-      price.innerText = product.price
+      price.innerText = `${product.price} €`
       img.src = product.product_img
       description.innerText = product.description
       location.innerText = product.location 
@@ -30,8 +33,8 @@ const fetchProducts = async ()=>{
       card.append(title)    
       card.append(price)    
       card.append(img)    
-      card.append(description)    
-      card.append(location)    
+      // card.append(description)    
+      // card.append(location)    
 
       wrapper.append(card)
     })
