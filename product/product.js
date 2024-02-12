@@ -4,7 +4,7 @@ const title = document.getElementById("title")
 const price = document.getElementById("price")
 const img = document.getElementById("img")
 const description = document.getElementById("description")
-const Location = document.getElementById("location")
+const lokacija = document.getElementById("lokacija")
 
 const deleteProduct = document.getElementById("delete-product-btn") 
 
@@ -19,10 +19,10 @@ const product = await response.json()
 console.log(product);
 
 title.innerText = product.title
-price.innerText = product.price
+price.innerText = `${product.price} €`
 img.src = product.product_img
 description.innerText = product.description
-Location.innerText = product.location
+lokacija.innerText = product.lokacija
 }
 
 fetchProduct() 
@@ -38,7 +38,7 @@ console.log(product)
 
 // const deletedProduct = await response.json() 
 
-message.innerText = 'product deleted successfully'
+message.innerText = 'Skelbimas ištrintas!'
 
 setTimeout(()=>{
   window.location.assign("../index.html")

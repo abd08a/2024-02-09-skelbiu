@@ -6,11 +6,11 @@ const title = document.getElementById("title");
 const price = document.getElementById("price"); 
 const product_img = document.getElementById("product_img"); 
 const description = document.getElementById("description"); 
-const Location = document.getElementById("location"); 
+const lokacija = document.getElementById("lokacija"); 
 
 
 button.addEventListener('click', async ()=>{
-  if (!title.value || !description.value || !price.value || !Location.value || !product_img.value) {
+  if (!title.value || !description.value || !price.value || !lokacija.value || !product_img.value) {
     console.log('Please fill all the inputs');
     return
   }
@@ -20,7 +20,7 @@ button.addEventListener('click', async ()=>{
     price: price.value,
     product_img: product_img.value,
     description: description.value, 
-    location: location.value,
+    lokacija: lokacija.value,
   }
   console.log(productData); 
 
@@ -36,7 +36,7 @@ button.addEventListener('click', async ()=>{
 
   const addedProduct = await response.json() 
 
-  message.innerText = 'product added successfully'
+  message.innerText = 'Skelbimas įkeltas sėkmingai!'
 
   setTimeout(()=>{
     window.location.assign("../index.html")

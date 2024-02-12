@@ -5,6 +5,8 @@ const fetchProducts = async ()=>{
 
     const products = await response.json() 
 
+    products.sort((a, b) => a.price - b.price)
+
     console.log(products);
 
     products.forEach((product)=>{
@@ -19,7 +21,7 @@ const fetchProducts = async ()=>{
       const price = document.createElement('p')
       const img = document.createElement('img')
       const description = document.createElement('p')
-      const location = document.createElement('p')
+      const lokacija = document.createElement('p')
 
       title.classList.add('title')
       price.classList.add('price')
@@ -28,13 +30,13 @@ const fetchProducts = async ()=>{
       price.innerText = `${product.price} €`
       img.src = product.product_img
       description.innerText = product.description
-      location.innerText = product.location 
+      lokacija.innerText = product.lokacija 
     
       card.append(title)    
       card.append(price)    
       card.append(img)    
       // card.append(description)    
-      // card.append(location)    
+      // card.append(lokacija)    
 
       wrapper.append(card)
     })

@@ -1,6 +1,7 @@
 body{
   margin: 0 auto;
   max-width: 1440px;
+font-family: 'Poppins', sans-serif;
 }
 
 .logo{
@@ -33,11 +34,13 @@ object-fit: cover;
 .title{
   color:  rgb(204, 116, 16);
   font-size: 40px;
+  font-weight: 600;
 }
 
 .price{
   color: rgb(16, 112, 111);
   font-size: 28px;
+  font-weight: 600;
 } 
 
 

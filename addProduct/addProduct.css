@@ -1,4 +1,8 @@
-
+body{
+  margin: 0 auto;
+  max-width: 1440px;
+font-family: 'Poppins', sans-serif;
+}
 
 .logo{
   width: 300px;
@@ -43,4 +47,15 @@ nav li{
   background-color: rgb(255, 171, 77);
   padding: 10px;
   font-weight: 700;
+  width: 50%; 
+  margin: auto;
+}
+
+.message{
+  color: rgb(247, 199, 111) ;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-color: black;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
 }

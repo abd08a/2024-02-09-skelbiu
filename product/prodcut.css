@@ -1,15 +1,49 @@
-
+body{
+  margin: 0 auto;
+  max-width: 1440px;
+font-family: 'Poppins', sans-serif;
+}
 
 .logo{
   width: 300px;
   height: 150px;
 }
 
+.wrapper{
+  margin: auto;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  color:  rgb(204, 116, 16);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.price{
+  color: rgb(16, 112, 111);
+  font-size: 28px;
+  font-weight: 600;
+} 
+
 .product-img{
   max-width: 1000px;
   max-height: 800px;
   object-fit: cover;
   } 
+
+  .description{
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 1000px;
+  }
+ 
+  .lokacija{
+    font-size: 20px;
+    font-weight: 600;
+  }
 
   nav ul{
     list-style: none;
@@ -26,4 +60,38 @@
   
   nav li{
     margin-right: 20px;
+  }
+
+  .button-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .delete-product-btn {
+    color: black;
+    background-color: rgb(255, 171, 77);
+    padding: 10px;
+    font-weight: 700;
+    align-self: flex-end; /* Align button to the end of the flex container */
+    margin-top: 20px; /* Add margin top if needed */
+  }
+
+  .message-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .message{
+    color: black;
+    /* -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(247, 199, 111) ; */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400; 
+    /* align-self: flex-end; */
   }
