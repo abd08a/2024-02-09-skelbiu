@@ -38,6 +38,9 @@ font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 18px;
     max-width: 1000px;
+    margin-top: 40px;
+    text-indent: 50px;
+    text-align: justify;
   }
  
   .lokacija{
@@ -74,8 +77,9 @@ font-family: 'Poppins', sans-serif;
     background-color: rgb(255, 171, 77);
     padding: 10px;
     font-weight: 700;
-    align-self: flex-end; /* Align button to the end of the flex container */
-    margin-top: 20px; /* Add margin top if needed */
+    align-self: flex-end; 
+    margin: 10px 40px 10px 0; 
+    cursor: pointer;
   }
 
   .message-wrapper {
@@ -94,4 +98,68 @@ font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 400; 
     /* align-self: flex-end; */
+  }
+
+  .burger-btn{
+    display: none;
+  } 
+
+  .mobile-menu {
+    background-color: cadetblue;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    bottom: -110%;
+    display: none;
+    transition: 0.6s;
+  
+    nav {
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 4rem;
+      }
+    }
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 10px solid orange;
+    margin-top: 150px;
+    font-size: 18px;
+  } 
+
+  footer .logo{
+    width: 200px;
+    height: 100px;
+    }
+  
+  .active {
+    bottom: -21.7%;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    header {
+      /* background-color: rgb(70, 185, 181); */
+      
+      nav ul {
+        display: none;
+      }
+    }
+
+    .mobile-menu{
+      display: inline-block;
+    }
+  
+    .burger-btn{
+      display: inline-block; 
+      margin: 10px 0 10px 40px;
+      background-color: rgb(70, 185, 181);
+      border-radius: 5px;
+      border: none;
+      } 
   }

@@ -1,3 +1,6 @@
+const burgerButton = document.getElementById("burger-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
 const button = document.getElementById("btn"); 
 const message = document.getElementById("message"); 
 message.setAttribute("class", "message")
@@ -7,6 +10,10 @@ const price = document.getElementById("price");
 const product_img = document.getElementById("product_img"); 
 const description = document.getElementById("description"); 
 const lokacija = document.getElementById("lokacija"); 
+
+burgerButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+});
 
 
 button.addEventListener('click', async ()=>{
@@ -40,6 +47,7 @@ button.addEventListener('click', async ()=>{
 
   setTimeout(()=>{
     window.location.assign("../index.html")
-  }, 3000)
+  }, 2000)
 })
+
 

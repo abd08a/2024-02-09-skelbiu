@@ -1,3 +1,8 @@
+const burgerButton = document.getElementById("burger-btn");
+const mobileMenu = document.getElementById("mobile-menu"); 
+
+const titles = document.querySelectorAll('.title');
+
 const fetchProducts = async ()=>{
   const response = await fetch(
     "https://65bb503452189914b5bbb46b.mockapi.io/products"
@@ -38,8 +43,23 @@ const fetchProducts = async ()=>{
       // card.append(description)    
       // card.append(lokacija)    
 
-      wrapper.append(card)
-    })
-}
+      wrapper.append(card); 
+    });
+
+      changeTitleColor();
+    }; 
+      
+    const changeTitleColor = () => {
+      titles.forEach((title, index) => {
+        if (index % 2 === 1) {
+            title.style.color = 'rgb(16, 112, 111)';
+        }
+      });
+    };
+
+
+burgerButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+});
 
 fetchProducts()

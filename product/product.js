@@ -1,3 +1,6 @@
+const burgerButton = document.getElementById("burger-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
 const productId = localStorage.getItem('productId')
 
 const title = document.getElementById("title")
@@ -24,6 +27,10 @@ img.src = product.product_img
 description.innerText = product.description
 lokacija.innerText = product.lokacija
 }
+
+burgerButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+});
 
 fetchProduct() 
 
