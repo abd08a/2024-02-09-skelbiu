@@ -87,6 +87,7 @@ footer .logo{
 
 .burger-btn{
   display: none;
+  cursor: pointer;
 } 
 
 .mobile-menu {

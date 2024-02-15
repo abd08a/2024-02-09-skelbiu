@@ -65,6 +65,7 @@ nav li{
 
 .burger-btn{
   display: none;
+  cursor: pointer;
 } 
 
 .mobile-menu {

@@ -102,6 +102,7 @@ font-family: 'Poppins', sans-serif;
 
   .burger-btn{
     display: none;
+    cursor: pointer;
   } 
 
   .mobile-menu {
